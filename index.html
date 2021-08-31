@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Front End Test - Greenthumb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <header class="header">
+        <div class="img-left-leaves"></div>
+        <div class="img-plant-person"></div>
+        <div class="img-right-leaves"></div>
+        <div class="logo-section">
+          <img class="logo" src="images/icons/logo-white.svg" alt="Greenthumb" />
+          <p class="heading">Find your next green friend</p>
+          <img
+            class="arrow-down"
+            src="images/icons/arrow-down.svg"
+            alt="Arrow Donw"
+          />
+        </div>
+      </header>
+
+      <section class="filters-section">
+        <div class="filters">
+
+          <!-- sunlight-->
+          <div class="filter-select">
+            <img src="images/illustrations/sun.png" width="75px" height="75px" />
+            <p class="filter-description">
+              <strong>1.</strong>
+              Set the amount of <strong>sunlight</strong> your plant will get.
+            </p>
+            <div class="select">
+              <select class="sunlight-select">
+                <option value="">Select...</option>
+                <option value="no">No sunlight</option>
+                <option value="low">Low sunlight</option>
+                <option value="high">Hight Sunlight</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- water-->
+          <div class="filter-select">
+            <img
+              src="images/illustrations/wateringcan.png"
+              width="103px"
+              height="75px"
+            />
+            <p class="filter-description">
+              <strong>2.</strong>
+              How often do you want to <strong>water</strong> your plant?
+            </p>
+            <div class="select">
+              <select class="water-select">
+                <option value="">Select...</option>
+                <option value="rarely">Rarely</option>
+                <option value="regularly">Regularly</option>
+                <option value="daily">Daily</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- chew -->
+          <div class="filter-select">
+            <img src="images/illustrations/dog.png" width="75px" height="75px" />
+            <p class="filter-description">
+              <strong>1.</strong>
+              Set the amount of <strong>sunlight</strong> your plant will get.
+            </p>
+            <div class="select">
+              <select class="chew-select">
+                <option value="">Select...</option>
+                <option value="false">No/They don't care</option>
+                <option value="true">Yes</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="results">
+        <!-- No Results -->
+        <div class="no-results">
+          <div class="no-results-texts">
+            <p class="no-results-title">No Results yet</p>
+            <p class="no-results-description">
+              Use the filters above to find the plant that best fits your
+              enviroment :)
+            </p>
+          </div>
+          <div class="empty-vase"></div>
+        </div> 
+      
+        <!-- Listing Plants  -->
+        <div class="show-results">
+          <img class="img-pick" src="images/illustrations/pick.png" alt="Pick" />
+      
+          <h1 class="results-title">Our picks for you</h1>
+
+          <div class="list"></div>
+      
+          <button class="button-up">
+            <img src="images/icons/arrow-up.svg" alt="ArrowUp" />
+            back to the top
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

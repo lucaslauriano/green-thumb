@@ -1,0 +1,264 @@
+.header {
+  height: 500px;
+  background-color: $green-lightest;
+  display: flex;
+  justify-content: center;
+
+  @include mobile {
+    height: 593px;
+    flex-direction: column;
+  }
+
+  .img-left-leaves {
+      background-image: url(/images/hero/desktop/left-leaves.png);
+      display: flex;
+      flex: 2;
+      align-items: center;
+      justify-content: center;
+      background-size: 100% 100%;
+
+      @include mobile {
+        background: url(/images/hero/mobile/mobile-leaves.png) no-repeat;
+        background-size: 100% 100%;
+      }
+  }
+
+  .img-plant-person {
+      flex: 1;
+      background: url(/images/hero/desktop/plantperson.png) no-repeat;
+      background-size: 95% 95%;
+      background-position: 50%;
+
+      @include mobile {
+        background: url(/images/hero/mobile/mobile-plantperson.png) no-repeat;
+        background-size: 90% 100%;
+        background-position: 100%;
+
+      }
+  }
+
+  .img-right-leaves {
+      flex: 1;
+      background-image: url(/images/hero/desktop/right-leaves.png);
+      background-size: 100% 100%;
+
+      @include mobile {
+        display: none;
+      }
+  }
+
+  .logo-section {
+      top: 30px;
+      width: 900px;
+      height: auto;
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+
+      @include mobile {
+        width: 70%;
+        justify-content: start;
+        align-items: start;
+        padding-left: 39px;
+      }
+
+      .logo {
+          width: 163.33px;
+          height: 25px;
+          max-width: 400px;
+          margin-bottom:0px; 
+
+          @include mobile {
+            width: 163px;
+            
+          }
+
+          
+      }
+
+      .heading {
+          margin-top: 35px;
+          width: 420px;
+          font-weight: 700;
+          font-size: 70px;
+          color: $white;
+          line-height: 85.33px;
+          position: relative;
+          margin-bottom:0px; 
+          margin-left: -5px;
+
+          @include mobile {
+            margin-top: 22px;
+            width: 230px;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            line-height: 48.76px;
+          }
+      }
+
+      .arrow-down {
+          width: 35px;
+          margin-top: 30px;
+          height: 39px;
+          position: relative;
+          @include mobile {
+            width: 35px;
+            margin-top: 12px;
+            height: 39px;
+            position: relative;
+            align-self: flex-start;
+
+          }
+      }
+     
+  }
+}
+
+.filters-section {
+  display: flex;
+  width: 100%;
+  height: 299px;
+  @include flexLayout();
+
+  @include mobile {
+    height: 830px;
+    @include flexLayout(flex-start, flex-start);
+  }
+  .filters {
+      width: 900px;
+      margin-top: 16px;
+      display: flex;
+      height: auto;
+      justify-content: space-between;
+
+      @include mobile {
+        margin-top: 0px;
+        @include flexLayout(flex-start, center, column);
+
+      }
+      .filter-select {
+        @include mobile {
+            &:first-child {
+              margin-top: 40px;
+            }
+          margin-top: 60px;
+  
+        }
+      }
+      .filter-description {
+          color: $grey-light;
+          width: 230px;
+      }
+  }
+}
+
+.plants {
+ margin-top:54px;
+ width: 100%;
+ display: flex;
+}
+
+.show-results {
+ 
+  display: none;
+  width: 900px;
+
+  @include mobile {
+    padding-left: 46px;
+  }
+  .img-pick {
+    margin-top: 37px;
+    width: 158px;
+    height: 78px;
+  }
+ 
+  .results-title {
+    margin: 10px;
+    margin-left: 0px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+
+    @include mobile {
+      font-size: 40px;
+      line-height: 49px;
+    }
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+
+    @include mobile {
+      width: 258px;
+      height: 321px;
+      overflow-x: scroll;
+      display: flex;
+    }
+  }
+}
+
+.results {
+  background-color: $grey-lightest;
+  @include mobile {
+    height: 100%;
+    top: 300px;
+  }
+  @include flexLayout();
+  .no-results {
+      width: 900px;
+      height:324px;
+      @include flexLayout(start, center, row);
+    
+
+      @include mobile {
+        @include flexLayout(center, center, column);
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+
+      .no-results-texts {
+          margin-right: 110px;
+          width: 442px;
+          @include mobile {
+            width: 250px;
+            padding-left: 120px;
+          }
+          .no-results-title{
+              color: $grey-light;
+              font-size: 45px;
+              font-weight: 700;
+              line-height: 55px;
+              margin-bottom:0px; 
+          }
+          .no-results-description {
+              width: 230px;
+              font-size: 16px;
+              line-height: 27px;
+              color: $grey-light;
+          }
+      }
+      .empty-vase {
+          margin-top:50px;
+          width: 104px;
+          height: 203px;
+          background-size: 100% 100%;
+          background-image: url(/images/illustrations/no-results.png);
+
+          @include mobile {
+            margin-top: 0px;
+            
+            width: 84px;
+          height: 164px;
+          }
+
+      }
+
+         
+    
+    }
+  }

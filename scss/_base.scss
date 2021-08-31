@@ -1,0 +1,38 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+body {  
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: $white;
+}
+
+main {
+  @include mobile {
+  }
+}
+
+select {
+  width: 100%;
+  border: none;
+  color: $grey-light;
+  background-color: $white;
+ // appearance: none;
+  &:focus-visible {
+      outline: none;
+  }
+ 
+}
+
+%global-padding {
+	padding: 3rem calc((100vw - 1200px) / 2);
+}

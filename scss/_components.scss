@@ -1,0 +1,173 @@
+.select {
+  width: 219px;
+  border: 1px solid $grey-light;
+  height: 20px;
+  border-radius: 19px;
+  padding: 10px;
+  margin-top: 32px;
+
+}
+
+.button-up {
+  @include flexLayout();
+  width: 100%;
+  height: 50px;
+  margin-top: 75px;
+  margin-bottom: 128px;
+  font-weight: 300;
+  font-size: 16px;
+  color: $green-dark;
+  border-radius: 25px;
+  border: 1px solid $green;
+  background: $white;
+  img {
+    margin-right: 20px;
+  }
+  @include mobile {
+    margin-left: -20px;
+  }
+}
+
+.first-thumb  {
+  width: 437px;
+  height: 510px;
+  background: $white;
+  border-radius: 5px;
+  display: flex;
+  grid-column: span 2;
+  grid-row: span 2;
+  flex-direction: column;
+
+  @include mobile {
+    width: 258px;
+    height: 321px;
+  }
+
+  .favorite-tag {
+    top:37px;
+    width: 189px;
+    height: 43px;
+    position: relative;
+    background-color: $green-lightest;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.181163);
+    font-size: 18px;
+    color:  $white;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-left: 21px;
+  
+  }
+
+  .image {
+    top:0px;
+    margin-top: 0px;
+    width: 299px;
+    height: 353px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      width: 187;
+      height: 221px;
+      img {
+        width: 66%;
+        height: auto;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      @include mobile {
+          width: 66%;
+          height: auto;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    height: 80px;
+    .title {
+      width: 192px;
+      margin: 0PX;
+      padding-left: 28px;
+      font-size: 35px;
+      font-weight: 700;
+      color: $green-darkest;
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+    .icons-price {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+      flex: 1;
+      margin-right: 28px;
+      justify-content: flex-end;
+
+      .price {
+        color: $green-light;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .icon {
+
+    }
+  }
+}
+
+.thumb  {
+  width: 206px;
+  height:245px;
+  background: $white;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-left: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    width: 213px;
+    height: 321px;
+  }
+
+  image {
+    width: 107px;
+    height: 161px;
+    img {
+      margin-top:16;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .footer {
+    .title {
+      width: 189px;
+      font-size: 35px;
+      line-height:37px;
+      color: $green-darkest;
+    }
+
+    .price {
+
+    }
+
+    .icon {
+
+    }
+  }
+}
