@@ -19,8 +19,10 @@ class Plants {
     if (data) {
       noResults.style.display = "none";
       showResults.style.display = "block";
+
       removeAll(document.querySelectorAll("first-thumb"));
       removeAll(document.querySelectorAll("thumb"));
+
       const ordered = orderBy(data);
       ordered.forEach((el, index) => {
         index === 0 ? this.setFirstThumb(el) : this.setThumb(el);
